@@ -1,0 +1,28 @@
+.nav-links {
+  border: none;
+  height: 3px;
+  background-color: #a7a88a;
+  width: 100px;
+  position: absolute;
+  top: 24px;
+  right: 50%;
+  text-align: center;
+  justify-content: flex-end;
+}
+.nav3 {
+  color: white;
+  background-color: #a7a88a;
+}
+.nav4 {
+  color: white;
+  z-index: 100;
+  position: absolute;
+  right: 70%;
+  transform: translateY(-15px);
+}
+@media (max-width: 1024px) {
+  .nav-links {
+    position: absolute;
+    left: 30%;
+  }
+}

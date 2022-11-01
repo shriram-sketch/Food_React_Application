@@ -1,0 +1,153 @@
+table {
+  font-size: 75%;
+  table-layout: fixed;
+  width: 80%;
+  margin-left: 4pc;
+}
+.nav1 {
+  display: flex;
+  color: white;
+  position: relative;
+  top: 20px;
+  margin-left: 50%;
+  margin-top: 10px;
+}
+.nav2 {
+  display: flex;
+  color: white;
+  position: relative;
+  top: -20px;
+  margin-left: 80%;
+  margin-top: 10px;
+}
+.table {
+  width: 80%;
+}
+.details p {
+  display: flex;
+  flex-direction: row;
+}
+.table {
+  border-collapse: separate;
+  border-spacing: 2px;
+}
+.h {
+  margin-left: 25%;
+  height: 60px;
+  width: 30%;
+  position: relative;
+  top: -70px;
+  background-color: #6b8ce6;
+  color: white;
+  opacity: 0;
+}
+h6 {
+  margin-left: 45%;
+}
+.invoice {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-style: groove;
+  width: 50%;
+  margin-left: 27%;
+  border: none;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+th,
+td {
+  border-width: 1px;
+  padding: 0.5em;
+  position: relative;
+  text-align: left;
+}
+th,
+td {
+  border-radius: 0.25em;
+  border-style: solid;
+}
+th {
+  background: #eee;
+  border-color: #bbb;
+}
+td {
+  border-color: #ddd;
+}
+.check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ch {
+  width: 105%;
+}
+.payment button {
+  margin-top: 3pc;
+  justify-content: center;
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: #003049;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset,
+    rgba(50, 50, 93, 0.1) 0 2px 5px 0, rgba(0, 0, 0, 0.07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue",
+    Ubuntu, sans-serif;
+  font-size: 100%;
+  height: 44px;
+  line-height: 1.15;
+
+  outline: none;
+  overflow: hidden;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  margin-top: 2pc;
+  margin-left: 25pc;
+  transition: all 0.2s, box-shadow 0.08s ease-in;
+  user-select: none;
+
+  touch-action: manipulation;
+  width: 20%;
+  margin-bottom: 23vh;
+}
+button:hover {
+  opacity: 0.5;
+}
+.Cash button {
+  justify-content: center;
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: #003049;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset,
+    rgba(50, 50, 93, 0.1) 0 2px 5px 0, rgba(0, 0, 0, 0.07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue",
+    Ubuntu, sans-serif;
+  font-size: 100%;
+  height: 44px;
+  line-height: 1.15;
+
+  outline: none;
+  overflow: hidden;
+
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  margin-top: 2pc;
+  left: 30%;
+  transition: all 0.2s, box-shadow 0.08s ease-in;
+  user-select: none;
+
+  touch-action: manipulation;
+  width: 20%;
+}

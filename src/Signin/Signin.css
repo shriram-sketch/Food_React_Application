@@ -1,0 +1,218 @@
+.signin {
+  background-color: none;
+  height: 39pc;
+}
+.signin h1 {
+  color: yellow;
+}
+.signup {
+  background-color: none;
+  height: 39pc;
+}
+.head .nav1 {
+  visibility: hidden;
+}
+.head .nav2 {
+  visibility: hidden;
+}
+.head {
+  margin-left: 10pc;
+}
+.signup h1 {
+  color: yellow;
+}
+.Header {
+  position: relative;
+  bottom: -20pc;
+  margin-bottom: 40pc;
+}
+#Heading {
+  position: relative;
+  margin-top: 30pc;
+  padding-bottom: 5pc;
+}
+.input_field label {
+  position: relative;
+  bottom: 10px;
+  margin-right: 10px;
+}
+.Heading1 {
+  margin-top: 20pc;
+}
+.wrapper {
+  position: relative;
+  bottom: 0;
+  margin-top: 20pc;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 350px;
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 5px;
+
+  box-shadow: 4px 4px 2px rgba(254, 236, 164, 1);
+}
+.wrapper1 {
+  position: relative;
+  bottom: 0;
+  margin-top: 10pc;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 350px;
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 5px;
+
+  box-shadow: 4px 4px 2px rgba(254, 236, 164, 1);
+}
+.input_field label {
+  margin-left: 5pc;
+}
+.wrapper input[type="text"] {
+  margin-bottom: 1pc;
+  position: relative;
+  bottom: 0.5pc;
+}
+.wrapper1 input[type="text"] {
+  margin-bottom: 1pc;
+  position: relative;
+  bottom: 0.5pc;
+}
+.wrapper h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #332902;
+}
+.wrapper1 h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #332902;
+}
+
+.wrapper .input_field {
+  position: relative;
+}
+.wrapper1 .input_field {
+  position: relative;
+}
+.New {
+  position: relative;
+  bottom: 2pc;
+}
+.wrapper .input_field input[type="text"],
+.wrapper textarea {
+  border: 1px solid #e0e0e0;
+  width: 50%;
+  padding: 4px;
+}
+.wrapper1 .input_field input[type="text"],
+.wrapper1 textarea {
+  border: 1px solid #e0e0e0;
+  width: 50%;
+  padding: 4px;
+}
+.wrapper .input_field input[type="password"],
+.wrapper textarea {
+  border: 1px solid #e0e0e0;
+  width: 50%;
+  padding: 4px;
+}
+.wrapper1 .input_field input[type="password"],
+.wrapper1 textarea {
+  border: 1px solid #e0e0e0;
+  width: 50%;
+  padding: 4px;
+}
+.wrapper .input_field input[type="email"],
+.wrapper textarea {
+  border: 1px solid #e0e0e0;
+  width: 50%;
+  padding: 4px;
+}
+.wrapper1 .input_field input[type="email"],
+.wrapper1 textarea {
+  border: 1px solid #e0e0e0;
+  width: 50%;
+  padding: 4px;
+}
+.wrapper textarea {
+  resize: none;
+  height: 80px;
+}
+.wrapper1 textarea {
+  resize: none;
+  height: 80px;
+}
+.btn10 input[type="submit"] {
+  border: 0px;
+  margin-top: 17pc;
+  padding: 10px;
+  text-align: center;
+  width: 200pt;
+  background: #fece0c;
+  color: #332902;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-radius: 2px;
+  cursor: poiter;
+  margin-left: pc;
+}
+.wrapper .btn10 input[type="submit"] {
+  border: 0px;
+  margin-top: 15px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  background: #fece0c;
+  color: #332902;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.wrapper1 .btn10 input[type="submit"] {
+  border: 0px;
+  margin-top: 15px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  background: #fece0c;
+  color: #332902;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+#error_message {
+  margin-bottom: 50px;
+  background: #fe8b8e;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+}
+.btn10 input[type="submit"]:hover {
+  background: black;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
+}
+.btn10 a {
+  text-decoration: none;
+  color: black;
+}
+.btn10 a:hover {
+  background: black;
+  color: #fff;
+  border-radius: 5px;
+}

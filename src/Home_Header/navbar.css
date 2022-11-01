@@ -1,0 +1,46 @@
+nav {
+  background: #6b8ce6;
+  padding: 20px;
+  display: flex;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+}
+nav .nav-brand img {
+  width: 30px;
+  height: 30px;
+  filter: brightness(400%);
+  cursor: pointer;
+}
+.nav-brand {
+  color: white;
+
+  margin-left: 30px;
+}
+.nav-brand1 {
+  margin-left: 30px;
+}
+.nav-brand:hover {
+  background-color: #c1d3fe;
+}
+nav .cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+  cursor: pointer;
+}
+nav .cart img {
+  width: 30px;
+  height: 30px;
+}
+nav .cart p {
+  position: absolute;
+  color: white;
+  top: -0.5%;
+  padding: 2px 7px;
+  border-radius: 50px;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+}
