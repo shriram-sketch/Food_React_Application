@@ -77,7 +77,7 @@ const Cart = ({ cart, setCart, handleChange }) => {
             left: "100px",
             top: "-7px",
             height: "30px",
-            width: "200px"
+            width: "200px",
           }}
         >
           <img
@@ -92,7 +92,7 @@ const Cart = ({ cart, setCart, handleChange }) => {
           position: "relative",
           bottom: "5pc",
           left: "59%",
-          color: "white"
+          color: "white",
         }}
       >
         {cart.length}
@@ -174,7 +174,7 @@ const Cart = ({ cart, setCart, handleChange }) => {
                           ? {
                               ...item,
                               quantity:
-                                item.quantity > 1 ? item.quantity - 1 : 1
+                                item.quantity > 1 ? item.quantity - 1 : 1,
                             }
                           : item;
                       });
@@ -191,7 +191,7 @@ const Cart = ({ cart, setCart, handleChange }) => {
                   </button>
                 </div>
                 <span
-                  style={{ position: "relative", top: "60px", right: "390px" }}
+                  style={{ position: "relative", top: "60px", right: "370px" }}
                   onLoad={check()}
                 >
                   {" "}
