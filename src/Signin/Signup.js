@@ -79,95 +79,97 @@ const Signup = (props) => {
   let navigate = useNavigate();
   return (
     <div id="">
-      <Header />
-      <div className="head"></div>
-      <div className="">
-        <div id="logo"></div>
-      </div>
-      <div className="wrapper">
-        <div className="formcard1">
-          <div className="formhead">
-            <h2
-              style={{
-                color: "rgb(5,52,123)",
-                fontSize: "1.3em",
-                fontWeight: "300",
-                marginLeft: "12px",
-                marginTop: "0px",
-                marginBottom: "5px",
-              }}
-            >
-              Create a Foodmart Account
-            </h2>
-          </div>{" "}
-          <div id="error_message"></div>
-          <form className="inputFormWrapper" onSubmit={handleValidation}>
-            <br />
-            <div className="input_field">
-              <label>Username</label>
-              <span className="break b1" />
-              <input
-                type="text"
-                name="fname"
-                id="name"
-                className="supinputSign inputSign"
-              />
-            </div>
-            <div className="input_field">
-              <label>Phone No</label>
-              <span className="break b1" />
-              <input type="text" name="lname" id="phone" className="" />
-            </div>
-            <span className="break b1" />
-            <div className="input_field">
-              <label
+      <>
+        <Header />
+        <div className="head"></div>
+        <div className="">
+          <div id="logo"></div>
+        </div>
+        <div className="wrapper">
+          <div className="formcard1">
+            <div className="formhead">
+              <h2
                 style={{
-                  marginLeft: "7pc",
+                  color: "rgb(5,52,123)",
+                  fontSize: "1.3em",
+                  fontWeight: "300",
+                  marginLeft: "12px",
+                  marginTop: "0px",
+                  marginBottom: "5px",
                 }}
               >
-                Email
-              </label>
+                Create a Foodmart Account
+              </h2>
+            </div>{" "}
+            <div id="error_message"></div>
+            <form className="inputFormWrapper" onSubmit={handleValidation}>
+              <br />
+              <div className="input_field">
+                <label>Username</label>
+                <span className="break b1" />
+                <input
+                  type="text"
+                  name="fname"
+                  id="name"
+                  className="supinputSign inputSign"
+                />
+              </div>
+              <div className="input_field">
+                <label>Phone No</label>
+                <span className="break b1" />
+                <input type="text" name="lname" id="phone" className="" />
+              </div>
               <span className="break b1" />
-              <input
-                type="email"
-                name="email"
-                id="email"
-                className="supinputSign inputSign"
-                style={{ position: "relative", bottom: "1pc" }}
-              />
-            </div>
-            <br />
-            <div className="input_field">
-              <label>Password</label>
-              <span className="break b1" />
-              <input
-                type="password"
-                name="password"
-                id="pass"
-                style={{ position: "relative", bottom: "1pc" }}
-                className="supinputSign inputSign"
-              />
-            </div>
-            <br />
-            <div className="input_field">
-              <label>Confirm </label>
-              <span className="break b1" />
-              <input
-                type="password"
-                name="password"
-                id="confirm"
-                style={{ position: "relative", bottom: "1pc" }}
-                className="supinputSign inputSign"
-              />
-            </div>
-            <div className="btn10">
-              <input type="submit" id="submitButton" className="btn" />
-            </div>
-            <br />
-            Already Account having?<Link to="/signin">Signin</Link>
-          </form>{" "}
+              <div className="input_field">
+                <label
+                  style={{
+                    marginLeft: "7pc",
+                  }}
+                >
+                  Email
+                </label>
+                <span className="break b1" />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  className="supinputSign inputSign"
+                  style={{ position: "relative", bottom: "1pc" }}
+                />
+              </div>
+              <br />
+              <div className="input_field">
+                <label>Password</label>
+                <span className="break b1" />
+                <input
+                  type="password"
+                  name="password"
+                  id="pass"
+                  style={{ position: "relative", bottom: "1pc" }}
+                  className="supinputSign inputSign"
+                />
+              </div>
+              <br />
+              <div className="input_field">
+                <label>Confirm </label>
+                <span className="break b1" />
+                <input
+                  type="password"
+                  name="password"
+                  id="confirm"
+                  style={{ position: "relative", bottom: "1pc" }}
+                  className="supinputSign inputSign"
+                />
+              </div>
+              <div className="btn10">
+                <input type="submit" id="submitButton" className="btn" />
+              </div>
+              <br />
+              Already Account having?<Link to="/signin">Signin</Link>
+            </form>{" "}
+          </div>
         </div>
-      </div>
+      </>
     </div>
   );
 };
