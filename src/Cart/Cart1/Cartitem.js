@@ -112,7 +112,7 @@ const Cart = ({ cart, setCart, handleChange }) => {
                           ? {
                               ...item,
                               quantity:
-                                item.quantity > 1 ? item.quantity - 1 : 1
+                                item.quantity > 1 ? item.quantity - 1 : 1,
                             }
                           : item;
                       });
@@ -129,7 +129,7 @@ const Cart = ({ cart, setCart, handleChange }) => {
                   </button>
                 </div>
                 <span
-                  style={{ position: "relative", top: "60px", right: "390px" }}
+                  style={{ position: "relative", top: "60px", right: "370px" }}
                   onLoad={check()}
                 >
                   {" "}
