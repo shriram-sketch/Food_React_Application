@@ -40,7 +40,9 @@ function CartList() {
               </>
             ) : (
               <>
-                <div className="Time">Ordered Time:{(prev = item.time)}</div>
+                <div className="Time">
+                  Order ID:{(prev = item.time)} {(prev = item.Date)}
+                </div>
                 <div className="containe">
                   <img className="image" src={item.img} width="30px" />
                   <div className="details ">

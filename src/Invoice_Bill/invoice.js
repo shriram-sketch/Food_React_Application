@@ -103,12 +103,28 @@ function invoice() {
             </tr>
             <tr>
               <th>
-                <span contenteditable>Date/Time</span>
+                <span contenteditable>Order ID</span>
               </th>
               <td>
                 <span contenteditable>
-                  {Date1}/{time}
+                  {time} {Date1}
                 </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <span contenteditable>Date</span>
+              </th>
+              <td>
+                <span contenteditable>{Date1}</span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <span contenteditable>Time</span>
+              </th>
+              <td>
+                <span contenteditable>{time}</span>
               </td>
             </tr>
             <tr>
