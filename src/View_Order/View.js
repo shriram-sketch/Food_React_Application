@@ -24,24 +24,13 @@ function CartList() {
                   <div className="details ">
                     <div className="part">
                       <span className="head1"> {item.title} </span>
-                      <span className="head"> Time:{item.time} </span>
-                      <span className="hea"> Date:{item.Date} </span>
+                      <span className="head"> Date:{item.Date} </span>
+                      <span className="hea"> Quantity:{item.quantity} </span>
                       <div className="count">
                         <span>
                           <div className="h3">
                             {" "}
                             <h2 id="h2">Rs. {item.price} </h2>
-                          </div>
-                          <div
-                            className="h3"
-                            style={{
-                              position: "relative",
-                              bottom: "1pc",
-                              right: "9pc"
-                            }}
-                          >
-                            {" "}
-                            Quantity {item.quantity}
                           </div>
                         </span>
                       </div>
@@ -70,7 +59,7 @@ function CartList() {
                             style={{
                               position: "relative",
                               bottom: "1pc",
-                              right: "9pc"
+                              right: "9pc",
                             }}
                           >
                             {" "}
