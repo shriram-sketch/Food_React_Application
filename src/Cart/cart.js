@@ -79,7 +79,7 @@ const Cart = ({ cart, setCart, handleChange }) => {
             left: "100px",
             top: "-7px",
             height: "30px",
-            width: "200px"
+            width: "200px",
           }}
         >
           <img
@@ -93,6 +93,7 @@ const Cart = ({ cart, setCart, handleChange }) => {
         className="cart1"
         style={{ position: "relative", bottom: "115px", height: "15px" }}
       ></div>
+      <div className="normal"></div>
       {cart.length === 0 ? (
         <div className="empty" style={{ backgroundColor: "#e5e9eb" }}>
           <img
@@ -152,7 +153,7 @@ const Cart = ({ cart, setCart, handleChange }) => {
                           ? {
                               ...item,
                               quantity:
-                                item.quantity > 1 ? item.quantity - 1 : 0
+                                item.quantity > 1 ? item.quantity - 1 : 0,
                             }
                           : item;
                       });
