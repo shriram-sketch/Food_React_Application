@@ -8,7 +8,7 @@ import remove from "./delete.png";
 import Food from "./food.png";
 const Cart = ({ cart, setCart, handleChange }) => {
   localStorage.setItem("cart", JSON.stringify(cart || []));
-  var cart = Object.values(JSON.parse(localStorage.getItem("cart")));
+  var cart1 = Object.values(JSON.parse(localStorage.getItem("cart")));
   let cartProducts = JSON.parse(localStorage.getItem("cart"));
   console.log(cartProducts);
   const handleRemove = (id) => {
@@ -25,7 +25,9 @@ const Cart = ({ cart, setCart, handleChange }) => {
   function check(id) {
     cart.map((item) => {
       if (item.quantity === 0) {
-        cart.pop((item) => item.id !== id);
+        if ((item) => item.id !== id) {
+          cart.splice(cart.indexOf(item), 1);
+        }
       }
     });
   }
@@ -77,7 +79,7 @@ const Cart = ({ cart, setCart, handleChange }) => {
             left: "100px",
             top: "-7px",
             height: "30px",
-            width: "200px",
+            width: "200px"
           }}
         >
           <img
@@ -87,39 +89,15 @@ const Cart = ({ cart, setCart, handleChange }) => {
           />
         </Link>
       </div>
-      <p
-        style={{
-          position: "relative",
-          bottom: "5pc",
-          left: "59%",
-          color: "white",
-        }}
-      >
-        {cart.length}
-      </p>
-      <div className="h">
-        <Link to="/home" className="nav1">
-          <img
-            width="10%"
-            style={{ position: "relative", bottom: "1vh" }}
-            src="https://cdn1.iconfinder.com/data/icons/frecons-one/64/home_house_back_-512.png"
-          />
-          Back to home
-        </Link>{" "}
-        <Link to="/cart" className="nav2">
-          <img
-            width="20%"
-            style={{ position: "relative", bottom: "1vh" }}
-            src={cartLogo}
-          />
-          Back to Cart
-        </Link>
-      </div>
+      <div
+        className="cart1"
+        style={{ position: "relative", bottom: "115px", height: "15px" }}
+      ></div>
       {cart.length === 0 ? (
-        <div className="empty">
+        <div className="empty" style={{ backgroundColor: "#e5e9eb" }}>
           <img
             src="https://img.icons8.com/external-bearicons-flat-bearicons/344/external-NO-FOOD-capsule-hotel-bearicons-flat-bearicons.png"
-            style={{ marginTop: "5pc" }}
+            style={{ marginTop: "0pc" }}
           />
           &nbsp;<p style={{ marginTop: "10pc" }}>No Food items in cart.</p>{" "}
         </div>
@@ -174,7 +152,7 @@ const Cart = ({ cart, setCart, handleChange }) => {
                           ? {
                               ...item,
                               quantity:
-                                item.quantity > 1 ? item.quantity - 1 : 1,
+                                item.quantity > 1 ? item.quantity - 1 : 0
                             }
                           : item;
                       });

@@ -67,7 +67,7 @@ function invoice() {
             left: "100px",
             top: "-7px",
             height: "30px",
-            width: "200px"
+            width: "200px",
           }}
         >
           <img
@@ -82,7 +82,7 @@ function invoice() {
           position: "relative",
           bottom: "5pc",
           left: "59%",
-          color: "white"
+          color: "white",
         }}
       >
         {cart.length}
@@ -189,10 +189,12 @@ function invoice() {
         </div>
         <table className="table">
           <tr className="check">
-            <td className="ch">
-              Discount :<span class="space"></span> &emsp;&emsp;&nbsp;&emsp;
-              {random}%
-            </td>{" "}
+            <b>
+              <td className="ch">
+                Discount :<span class="space"></span> &emsp;&emsp;&nbsp;&emsp;
+                {random}%
+              </td>
+            </b>{" "}
             <td className="ch" style={{ fontSize: "12px" }}>
               <b>
                 {" "}
