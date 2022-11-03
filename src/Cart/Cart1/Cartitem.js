@@ -22,7 +22,9 @@ const Cart = ({ cart, setCart, handleChange }) => {
   function check(id) {
     cart.map((item) => {
       if (item.quantity === 0) {
-        cart.pop((item) => item.id !== id);
+        if ((item) => item.id !== id) {
+          cart.splice(cart.indexOf(item), 1);
+        }
       }
     });
   }
@@ -62,6 +64,7 @@ const Cart = ({ cart, setCart, handleChange }) => {
           &nbsp;<p style={{ marginTop: "10pc" }}>No Food items in cart.</p>{" "}
         </div>
       ) : null}
+      <div className="cart1"></div>
       <div className="Items">
         Total Items in cart:{cart.length}
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total
@@ -112,7 +115,7 @@ const Cart = ({ cart, setCart, handleChange }) => {
                           ? {
                               ...item,
                               quantity:
-                                item.quantity > 1 ? item.quantity - 1 : 1,
+                                item.quantity > 1 ? item.quantity - 1 : 0,
                             }
                           : item;
                       });
